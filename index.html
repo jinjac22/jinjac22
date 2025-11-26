@@ -66,13 +66,23 @@
         <ul>
             <li>Follow updates via my <a href="https://www.linkedin.com/newsletters/7360100777262006272/?displayConfirmation=true">LinkedIn Newsletter</a>.</li>
             <li>Questions? DM me on LinkedIn Profile : <a href="https://www.linkedin.com/in/jincysj">Jincy Jacob</a></li>
-            <li> <a href="https://www.linkedin.com/in/jincysj/overlay/contact-info">Email me</a></li>
+            <li><button id="emailBtn">Email me</button></li>
+
+<script>
+  const encoded = "c2pzdWpwQGdtYWlsLmNvbQ==";
+  document.getElementById("emailBtn").addEventListener("click", () => {
+    const email = atob(encoded); // decode
+    const subject = encodeURIComponent("Hello from Jincy's website");
+    window.location.href = `mailto:${email}?subject=${subject}`;
+  });
+</script>  
+          <li> <a href="https://www.linkedin.com/in/jincysj/overlay/contact-info">Email me</a></li>
         </ul>
         <p><em>Volunteering welcome—let's make AI and healthcare accessible to all walks of life! </em></p>
     </section>
     
     <footer>
-        <p>&copy; 2025 CodeWithJJ | Updated: Nov 24, 2025</p>
+        <p>&copy; 2025 ASAT | Updated: Nov 26, 2025</p>
     </footer>
 </body>
 </html>
