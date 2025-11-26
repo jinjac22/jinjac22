@@ -24,6 +24,14 @@
 <body>
     <header>
         <h1>Jincy's AI for Social Good: Empowering Healthcare Through Innovation & AI </h1>
+      <script>
+  const encoded = "c2pzdWpwQGdtYWlsLmNvbQ==";
+  document.getElementById("emailBtn").addEventListener("click", () => {
+    const email = atob(encoded); // decode
+    const subject = encodeURIComponent("Hello from Jincy's website");
+    window.location.href = `mailto:${email}?subject=${subject}`;
+  });
+</script>
     </header>
     
     <section>
@@ -67,16 +75,10 @@
             <li>Follow updates via my <a href="https://www.linkedin.com/newsletters/7360100777262006272/?displayConfirmation=true">LinkedIn Newsletter</a>.</li>
             <li>Questions? DM me on LinkedIn Profile : <a href="https://www.linkedin.com/in/jincysj">Jincy Jacob</a></li>
             <li><button id="emailBtn">Email me</button></li>
+            <li> <a href="https://www.linkedin.com/in/jincysj/overlay/contact-info">Email me</a></li>
 
-<script>
-  const encoded = "c2pzdWpwQGdtYWlsLmNvbQ==";
-  document.getElementById("emailBtn").addEventListener("click", () => {
-    const email = atob(encoded); // decode
-    const subject = encodeURIComponent("Hello from Jincy's website");
-    window.location.href = `mailto:${email}?subject=${subject}`;
-  });
-</script>  
-          <li> <a href="https://www.linkedin.com/in/jincysj/overlay/contact-info">Email me</a></li>
+
+  
         </ul>
         <p><em>Volunteering welcome—let's make AI and healthcare accessible to all walks of life! </em></p>
     </section>
